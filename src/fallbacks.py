@@ -1,6 +1,10 @@
 from __future__ import annotations
 
 
+def template_summary() -> str:
+    return "A video clip shows a visible subject in a real-world scene with clear ongoing action."
+
+
 def template_caption(neutral_summary: str, style: str) -> str:
     summary = _clip_words(neutral_summary, 16)
     if style == "formal":

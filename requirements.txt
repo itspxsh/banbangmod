@@ -1,2 +1,13 @@
-numpy>=1.26,<3
-opencv-python-headless>=4.10,<5
+transformers>=5.10.1
+accelerate
+peft
+trl
+datasets
+decord
+opencv-python-headless
+pillow
+numpy
+requests
+orjson
+pydantic
+openai

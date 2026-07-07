@@ -1,0 +1,24 @@
+model_name: google/gemma-4-12B-it
+training_type: qlora
+precision: bf16
+max_seq_length: 4096
+video_frames: 8_to_16
+lora_rank: 16
+lora_alpha: 32
+lora_dropout: 0.05
+target_modules:
+  - q_proj
+  - k_proj
+  - v_proj
+  - o_proj
+  - gate_proj
+  - up_proj
+  - down_proj
+learning_rate: 2.0e-5
+scheduler: cosine
+warmup_ratio: 0.03
+epochs: 2
+batch_size_per_device: 1
+gradient_accumulation_steps: 8
+weight_decay: 0.01
+gradient_checkpointing: true

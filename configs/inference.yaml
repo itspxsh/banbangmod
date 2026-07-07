@@ -1,0 +1,7 @@
+model_id: google/gemma-4-12B-it
+backend: local_rocm
+uniform_frame_count: 8
+scene_change_frame_count: 4
+max_frame_dimension: 768
+gemma4_timeout_seconds: 120
+text_timeout_seconds: 90

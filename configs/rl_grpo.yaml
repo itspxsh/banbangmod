@@ -1,0 +1,17 @@
+model_name: outputs/gemma4_track2_sft_lora
+num_generations: 4
+max_prompt_length: 4096
+max_completion_length: 128
+learning_rate: 5.0e-6
+beta: 0.04
+precision: bf16
+reward_weights:
+  factual_accuracy: 0.45
+  style_match: 0.30
+  fluency: 0.10
+  brevity: 0.10
+  json_validity: 0.05
+penalties:
+  hallucination: -0.50
+  missing_style: -0.30
+  unsafe_humor: -0.20
